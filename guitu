@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龟兔赛跑</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFAF0; /* 背景色 */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FF69B4; /* 粉色背景 */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFFAF0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #FF6347;
+        }
+
+        h3 {
+            color: #FF6347;
+        }
+
+        .img-center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%; /* 控制图片大小 */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #FF69B4;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+
+        ul {
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <header>
+        <h1>龟兔赛跑 (Guī Tù Sài Pǎo)</h1>
+    </header>
+
+    <!-- 故事展示 -->
+    <section>
+        <h2>故事内容</h2>
+        <ul>
+            <li>从前从前，在一个大森林里，住着一只非常快的兔子。兔子跑得飞快，平时总是喜欢炫耀自己：“看我跑得多快！森林里没有谁能比得上我！”</li>
+            <li>有一天，兔子遇到了一只慢吞吞的乌龟。兔子看着乌龟，忍不住笑了：“嘿，乌龟，你跑得这么慢，怎么能比得上我呢？你根本追不上我！”</li>
+            <li>乌龟并不生气，反而笑了笑说：“兔子，咱们来比一场赛跑怎么样？”兔子一听，觉得自己一定能轻松赢，毫不犹豫地答应了比赛。</li>
+            <li>比赛的日子到了，森林里的小动物们都聚集在赛道两旁，准备观看这场有趣的比赛。松鼠们在树上跳来跳去，猴子们抓住树枝看得津津有味，小鸟们在空中飞来飞去，叽叽喳喳地为比赛加油。</li>
+            <li>比赛开始了！兔子像离弦的箭一样飞快地冲了出去，几乎眨眼间就跑得不见了踪影。乌龟则慢慢地开始爬，它一步一步稳稳地向前走。</li>
+            <li>兔子跑得越来越远，转头一看，乌龟还远远地在后面，兔子得意地笑了：“哈哈，乌龟根本追不上我！我跑得这么快，干脆休息一下，等它追上来再继续跑。”</li>
+            <li>于是，兔子在草地上找了一个阴凉的地方，躺下来开始睡觉。森林里的小动物们看到兔子睡着了，纷纷窃窃私语：“兔子睡着了，乌龟还在坚持走，谁知道最后会怎么样呢？”</li>
+            <li>小鸟飞过来对乌龟喊：“加油，乌龟，继续走下去！”乌龟一点也不着急，它一步一步地爬，不停歇。</li>
+            <li>森林里的小动物们看到乌龟这么坚持，都为它加油：“加油，乌龟，你一定可以的！”过了一会儿，兔子睡得正香，完全没有察觉到乌龟正在悄悄地追上它。</li>
+            <li>终于，乌龟一步一步地爬到了终点线，先到达了目标！</li>
+            <li>这时，兔子终于醒来了，它飞快地跑到终点，可是已经晚了，乌龟已经站在那里，得意地笑着。森林里的小动物们都欢呼起来：“乌龟赢了！乌龟赢了！”</li>
+            <li>兔子看着自己的失落，羞愧地低下了头，明白了一个道理：“原来，做事要稳扎稳打，不可以骄傲自满。”</li>
+            <li>“龟兔赛跑”的故事到此就结束啦！小朋友们，这个故事告诉我们，做事不能光靠一时的速度与热情，稳定、坚持和耐心才是最重要的。慢而稳，一步一个脚印，才能最终赢得比赛哦！</li>
+        </ul>
+    </section>
+
+    <!-- 生成图片展示 -->
+    <section>
+        <h2>生成的图像</h2>
+        <p>为了更好地展现这个故事，可以通过 AI 工具生成故事图片。本次，我使用小众软件“腾讯元宝”生成图片，我提供的描述是“画一幅图:森林里，一只带着红色发带的白色兔子快速奔跑，远处一只绿色乌龟在后面趴着缓慢爬行，3D卡通风格”。</p>
+        <p>生成效果如图所示：</p>
+        <img src="11.png" alt="龟兔赛跑生成图" class="img-center">
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 龟兔赛跑故事展示页面</p>
+    </footer>
+
+</body>
+</html>
