@@ -10,6 +10,9 @@
             background-color: #FFFAF0; /* 背景色 */
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 让页面至少占满屏幕高度 */
         }
 
         header {
@@ -30,6 +33,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            flex: 1; /* 确保内容部分自适应占据剩余空间 */
         }
 
         video {
@@ -42,10 +46,8 @@
             background-color: #FF69B4;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
             color: white;
+            margin-top: auto; /* 让页脚始终位于底部 */
         }
     </style>
 </head>
