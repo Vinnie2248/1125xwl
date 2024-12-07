@@ -10,6 +10,7 @@
             background-color: #FFFAF0; /* 暖色调背景颜色 */
             margin: 0;
             padding: 0;
+            padding-bottom: 80px; /* 增加底部留白，避免最后内容被遮挡 */
         }
 
         header {
@@ -58,12 +59,14 @@
             color: #FF6347; /* 子标题颜色 */
         }
 
-        .img-right {
-            float: right;
-            margin-left: 20px;
-            max-width: 300px;
+        .img-center {
+            display: block; /* 将图片设置为块级元素 */
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%; /* 限制图片宽度，避免过大 */
             height: auto;
             border-radius: 8px;
+            margin-bottom: 20px; /* 图片和文字之间的间距 */
         }
 
         footer {
@@ -99,10 +102,10 @@
     <!-- 基本介绍 -->
     <section id="intro">
         <h2>基本介绍</h2>
-        <img src="1.png" alt="剧集海报" class="img-right">
+        <img src="1.png" alt="剧集海报" class="img-center">
         <p>《了不起的麦瑟尔夫人》（The Marvelous Mrs. Maisel）是一部美国的喜剧剧集，由艾米·谢尔曼-帕拉迪诺（Amy Sherman-Palladino）创作，并在亚马逊工作室（Amazon Studios）旗下播出。这部剧集首次播出于2017年，并迅速获得了观众和评论家的高度评价。</p>
         <p>剧情背景设定在20世纪50年代的纽约，讲述了米琪·麦瑟尔（由瑞秋·布罗斯纳安饰演）的故事。米琪是一个阳光、聪明且对完美生活充满憧憬的犹太家庭主妇，她的生活因为丈夫的突然离开而发生了翻天覆地的变化。在一系列的事件之后，米琪发现了自己对单口喜剧的热爱，并开始追求成为一名喜剧演员的梦想。</p>
-        <img src="2.png" alt="剧照" class="img-right">
+        <img src="2.png" alt="剧照" class="img-center">
     </section>
 
     <!-- 出彩之处 -->
@@ -110,23 +113,23 @@
         <h2>出彩之处</h2>
 
         <h3>清新色调与考究镜头</h3>
-        <img src="3.png" alt="清新色调与考究镜头" class="img-right">
+        <img src="3.png" alt="清新色调与考究镜头" class="img-center">
         <p>该剧主色调清新明快，单机拍摄让光影和镜头极为考究，众多长镜头令人印象深刻。如米琪走进公寓的场景，短短几秒钟，她的美貌、利索与周到便跃然屏幕之上。</p>
 
         <h3>巴黎时尚与艺术之美</h3>
-        <img src="4.png" alt="巴黎艺术与时尚" class="img-right">
+        <img src="4.png" alt="巴黎艺术与时尚" class="img-center">
         <p>第二季中，巴黎被展现得诗意浪漫。作为时尚之都，街头女郎时髦，连普通大妈都能精准说出服装色号。巴黎充满人情味和怀旧气息，女主妈妈在巴黎找回了年轻时光。</p>
 
         <h3>女性意识觉醒</h3>
-        <img src="5.png" alt="女性意识觉醒" class="img-right">
+        <img src="5.png" alt="女性意识觉醒" class="img-center">
         <p>女主米琪从失婚妇女到女喜剧演员的转变，是女性意识觉醒的典范。第一季中，她遭丈夫背叛后，开始重新审视人生，不再以丈夫为中心，勇敢追求自我价值。</p>
 
         <h3>大尺度情节与真实感</h3>
-        <img src="6.png" alt="大尺度情节" class="img-right">
+        <img src="6.png" alt="大尺度情节" class="img-center">
         <p>剧中大尺度情节虽有争议，却增加了笑料和真实感。在保守时代，米琪的大胆表现打破传统观念，谈论敏感话题，表达真实感受，展现女性反抗精神。</p>
 
         <h3>女主的性格魅力</h3>
-        <img src="7.png" alt="米琪的性格魅力" class="img-right">
+        <img src="7.png" alt="米琪的性格魅力" class="img-center">
         <p>Midge 美丽且由内而外散发气质，对美执着追求。她内生积极性和永不言败的高能量，面对困难勇敢坚持，成为时代先锋。</p>
     </section>
 
@@ -137,3 +140,4 @@
 
 </body>
 </html>
+
