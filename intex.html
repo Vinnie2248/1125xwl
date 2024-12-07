@@ -3,26 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>音频和视频展示</title>
+    <title>龟兔赛跑的故事 AI 视频展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFAF0; /* 背景色 */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FF69B4; /* 粉色背景 */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFFAF0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #FF69B4;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>音频和视频展示</h1>
+
+    <!-- 页头 -->
+    <header>
+        <h1>龟兔赛跑的故事 AI 视频展示</h1>
+    </header>
 
     <!-- 视频展示 -->
-    <h2>视频播放</h2>
-    <video width="600" controls>
-        <source src="https://raw.githubusercontent.com/Vinnie2248/1125xwl/main/17944334-uhd_3840_2160_24fps.mp4" type="video/mp4">
-        你的浏览器不支持视频播放。
-    </video>
+    <section>
+        <h2>观看 "龟兔赛跑" 的 AI 视频</h2>
+        <video controls>
+            <source src="guitu.mp4" type="video/mp4">
+            您的浏览器不支持播放此视频。
+        </video>
+    </section>
 
-    <br><br>
-
-    <!-- 音频展示 -->
-    <h2>音频播放</h2>
-    <audio controls>
-        <source src="https://raw.githubusercontent.com/Vinnie2248/1125xwl/main/audio.mp3" type="audio/mp3">
-        你的浏览器不支持音频播放。
-    </audio>
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 龟兔赛跑 AI 视频展示页面</p>
+    </footer>
 
 </body>
 </html>
