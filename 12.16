@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海洋保护 - PPT 演示</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 基本页面样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #004d40;
+        }
+        .slide {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: opacity 0.5s;
+        }
+        .slide h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .slide p {
+            font-size: 1.5em;
+            line-height: 1.5;
+            max-width: 80%;
+        }
+        .buttons {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .button {
+            background-color: #004d40;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buttons">
+    <button class="button" onclick="previousSlide()">上一页</button>
+    <button class="button" onclick="nextSlide()">下一页</button>
+</div>
+
+<div class="slide" id="slide1">
+    <div>
+        <h1>海洋保护的重要性</h1>
+        <p>海洋覆盖了地球表面70%以上，是地球生命支持系统的关键组成部分。保护海洋意味着保护我们未来的生态系统。</p>
+    </div>
+</div>
+
+<div class="slide" id="slide2" style="display: none;">
+    <div>
+        <h1>海洋污染现状</h1>
+        <p>塑料垃圾、化学污染和过度捕捞正对海洋生态造成巨大压力。每年有数百万吨塑料进入海洋，影响着海洋生物的生存。</p>
+    </div>
+</div>
+
+<div class="slide" id="slide3" style="display: none;">
+    <div>
+        <h1>海洋保护的措施</h1>
+        <p>建立海洋保护区、减少塑料使用、加强渔业管理以及提高公众意识是保护海洋的有效方法。</p>
+    </div>
+</div>
+
+<div class="slide" id="slide4" style="display: none;">
+    <div>
+        <h1>每个人的责任</h1>
+        <p>我们每个人都可以通过减少塑料消费、参与清洁海滩行动以及支持环保政策来为海洋保护贡献力量。</p>
+    </div>
+</div>
+
+<script>
+    let currentSlide = 1;
+    const totalSlides = 4;
+
+    function showSlide(slideIndex) {
+        for (let i = 1; i <= totalSlides; i++) {
+            const slide = document.getElementById('slide' + i);
+            slide.style.display = (i === slideIndex) ? 'flex' : 'none';
+        }
+    }
+
+    function nextSlide() {
+        if (currentSlide < totalSlides) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    }
+
+    function previousSlide() {
+        if (currentSlide > 1) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    }
+
+    // Initial display
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>
