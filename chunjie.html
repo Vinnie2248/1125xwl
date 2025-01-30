@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: url('背景1.png') no-repeat center center fixed;
+            background: url('背景1.jpg') no-repeat center center fixed;
             background-size: cover;
         }
         .content-section {
@@ -29,6 +29,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#introduction">事件介绍</a></li>
                     <li class="nav-item"><a class="nav-link" href="#wordcloud">词云图展示</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sentiment-analysis">情感分析</a></li>
                     <li class="nav-item"><a class="nav-link" href="#video">完成视频展示</a></li>
                 </ul>
             </div>
@@ -40,8 +41,8 @@
             <h2>事件介绍</h2>
             <p>2024年12月5日，中国春节文化正式列入联合国教科文组织《人类非物质文化遗产代表作名录》，申遗项目名称为“春节——中国人庆祝传统新年的社会实践”。这一成就标志着春节文化在国际上获得重要认可。</p>
             <div class="row">
-                <div class="col-md-6"><img src="image1.png" class="img-fluid" alt="图片1"></div>
-                <div class="col-md-6"><img src="image2.png" class="img-fluid" alt="图片2"></div>
+                <div class="col-md-6"><img src="image1.jpg" class="img-fluid" alt="图片1"></div>
+                <div class="col-md-6"><img src="image2.jpg" class="img-fluid" alt="图片2"></div>
             </div>
             <p><strong>积极面：</strong></p>
             <ul>
@@ -55,13 +56,31 @@
                 <li>执行压力——如何保持春节文化的真实性，并应对商业化冲击，仍是未来的挑战。</li>
             </ul>
         </div>
-        
+
         <div id="wordcloud" class="content-section">
             <h2>词云图展示</h2>
             <p>引入哈工大停用词表去掉停用词并使用 Python 的 jieba 分词，后计算词频生成词云图。</p>
-            <img src="wordcloud.png" class="img-fluid" alt="词云图">
+            <img src="wordcloud.jpg" class="img-fluid" alt="词云图">
         </div>
-        
+
+        <div id="sentiment-analysis" class="content-section">
+            <h2>情感分析</h2>
+            <p>通过使用SnowNLP计算评论的情感分数，后用 Matplotlib绘制情感分布直方图，并用 WordCloud生成正面 & 负面评论的词云。如下图所示：</p>
+            <img src="春节情感分布.png" class="img-fluid" alt="情感分布直方图">
+            <p>观察情感分布直方图可发现，评论数量在情感分数为 1.0 时达到最高，高于50，说明正面情感的评论数量最多。情感分数在0.0 - 0.2 区间评论数量较少。</p>
+            <p>故评论的情感倾向整体偏正面，高情感分数（接近 1）的评论数量显著多于低情感分数（接近 0）的评论数量，说明大部分用户在微博上表达的是积极情感。</p>
+            
+            <h3>正面评论词云分析</h3>
+            <p>高频词汇：“春节”“申遗”“成功”“太棒”“赞”“转发”等词汇非常突出，表明网友对春节申遗成功的高度认可与积极庆祝，还包含“文化”“传统”“中国”等词，体现出对中华文化传承与弘扬的关注和自豪。</p>
+            <p>情感倾向：充满喜悦、自豪等积极情感，如“花花”“嘻嘻”“哇塞”等词展现出网友兴奋、开心的状态。</p>
+            <img src="正面词云.png" class="img-fluid" alt="正面评论词云">
+            
+            <h3>负面评论词云分析</h3>
+            <p>高频词汇：“棒子”“韩国”等词较突出，可能反映出部分网友针对其他国家与中国春节文化相关争议的负面情绪；同时也有“庆祝”“成功”等词，说明负面评论并非完全针对春节申遗成功本身。</p>
+            <p>情感倾向：包含一些不满、争议性的情绪，可能源于对其他国家文化争抢行为的反感等。</p>
+            <img src="负面词云.png" class="img-fluid" alt="负面评论词云">
+        </div>
+
         <div id="video" class="content-section">
             <h2>视频展示</h2>
             <video controls class="w-100">
@@ -70,7 +89,7 @@
             </video>
         </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
