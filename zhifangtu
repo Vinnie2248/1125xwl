@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>直方图</title>
+</head>
+<body>
+    <svg id="mySVG" width="800" height="600" version="1.1"></svg>
+
+    <script type="text/javascript">        
+        var mysvg = document.getElementById("mySVG");
+
+        for (var i = 0; i < 6; i++) {
+            var h = Math.random() * 255;
+            var r = Math.floor(Math.random() * 255);
+            var g = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+
+            // 创建矩形
+            var rec = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            rec.setAttribute("x", 45 * i);
+            rec.setAttribute("y", 400 - h);
+            rec.setAttribute("width", 42);
+            rec.setAttribute("height", h);
+            rec.setAttribute("fill", `rgb(${r},${g},${b})`);
+            mysvg.appendChild(rec);
+
+            // 创建文本
+            var txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            txt.setAttribute("x", 45 * i + 10);  // 让文本靠近柱子
+            txt.setAttribute("y", 400 - h - 5);  // 让文本稍微高于柱子
+            txt.setAttribute("fill", "black");  // 让文本颜色固定为黑色
+            txt.setAttribute("font-size", "14px");
+            txt.textContent = Math.floor(h);
+            mysvg.appendChild(txt);
+        }
+    </script>
+</body>
+</html>
